@@ -1,0 +1,27 @@
+# This file is part of the Sylius package.
+# (c) Paweł Jędrzejewski
+
+sylius:
+    form:
+        attribute:
+            choices: Choix
+            code: Code
+        attribute_type:
+            configuration: Configuration
+            select: Sélectionner
+            title: Type de l'attribut
+            validation: Validation
+        attribute_type_configuration:
+            datetime:
+                format: Format
+            date:
+                format: Format
+            select:
+                multiple: Multiple
+                values: Valeurs
+                choose: Sélectionnez une option
+                min: Nombre minimum d'entrées
+                max: Nombre maximum d'entrées
+            text:
+                min: Longueur minimum
+                max: Longueur maximum

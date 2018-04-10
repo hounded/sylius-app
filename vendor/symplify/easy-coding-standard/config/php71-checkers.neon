@@ -1,0 +1,10 @@
+checkers:
+    # PHP-CS-Fixer
+    PhpCsFixer\Fixer\ClassNotation\VisibilityRequiredFixer:
+        elements: [const, property, method]
+    - PhpCsFixer\Fixer\FunctionNotation\VoidReturnFixer
+    PhpCsFixer\Fixer\ListNotation\ListSyntaxFixer:
+        syntax: short
+
+    # Typehints
+    - SlevomatCodingStandard\Sniffs\TypeHints\NullableTypeForNullDefaultValueSniff

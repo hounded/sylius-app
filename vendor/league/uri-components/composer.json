@@ -1,0 +1,67 @@
+{
+    "name": "league/uri-components",
+    "type": "library",
+    "description" : "URI components manipulation library",
+    "keywords": [
+        "url",
+        "uri",
+        "rfc3986",
+        "components",
+        "scheme",
+        "userinfo",
+        "host",
+        "port",
+        "authority",
+        "path",
+        "query",
+        "fragment"
+    ],
+    "license": "MIT",
+    "homepage": "http://uri.thephpleague.com",
+    "authors": [
+        {
+            "name" : "Ignace Nyamagana Butera",
+            "email" : "nyamsprod@gmail.com",
+            "homepage" : "https://nyamsprod.com"
+        }
+    ]   ,
+    "require": {
+        "php": ">=7.0",
+        "ext-curl": "*",
+        "ext-fileinfo": "*",
+        "ext-intl": "*",
+        "ext-mbstring": "*",
+        "league/uri-hostname-parser": "^1.1.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.3",
+        "phpstan/phpstan": "^0.9.0",
+        "phpunit/phpunit": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "League\\Uri\\": "src"
+        },
+        "files": ["src/functions_include.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LeagueTest\\Uri\\": "tests"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": "\\League\\Uri\\Installer\\ICANNSection::update",
+        "post-update-cmd": "\\League\\Uri\\Installer\\ICANNSection::update",
+        "test": "phpunit --coverage-text; php-cs-fixer fix -v --diff --dry-run --allow-risky=yes;",
+        "phpunit": "phpunit --coverage-text",
+        "phpcs": "php-cs-fixer fix -v --diff --dry-run --allow-risky=yes;"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

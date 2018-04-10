@@ -1,0 +1,3 @@
+checkers:
+    - Symplify\CodingStandard\Sniffs\Classes\FinalInterfaceSniff
+    - PhpCsFixer\Fixer\ArrayNotation\NoTrailingCommaInSinglelineArrayFixer

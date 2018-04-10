@@ -1,0 +1,9 @@
+# This file is part of the Sylius package.
+# (c) Paweł Jędrzejewski
+
+sylius:
+    form:
+        tax_category:
+            description: Description
+        tax_rate:
+            included_in_price: Inclus dans le prix?

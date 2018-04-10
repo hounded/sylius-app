@@ -15,7 +15,7 @@
 !/bin/console
 !/bin/symfony_requirements
 
-/vendor
+#/vendor
 /node_modules
 
 /etc/build/*

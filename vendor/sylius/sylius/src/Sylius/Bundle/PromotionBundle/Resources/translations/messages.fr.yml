@@ -1,0 +1,42 @@
+# This file is part of the Sylius package.
+# (c) Paweł Jędrzejewski
+
+sylius:
+    form:
+        promotion:
+            description: Description
+            priority: Priorité
+        promotion_action:
+            item_fixed_discount: Remise fixe produit
+            item_percentage_discount: Rabais en pourcentage produit
+            order_fixed_discount: Remise sur la commande
+            order_percentage_discount: Rabais en pourcentage commande
+            shipping_percentage_discount: Rabais en pourcentage expédition
+            percentage_discount_configuration:
+                percentage: Pourcentage
+        promotion_coupon:
+            expires_at: Expire le
+        promotion_coupon_generator_instruction:
+            code_length: Longueur du code
+            expires_at: Expire le
+        promotion_filter:
+            price_range: Filtre de gamme de prix
+        promotion_rule:
+            cart_quantity: Quantité dans le panier
+            contains_product: Contient le produit
+            customer_group: Groupe de clients
+            has_at_least_one_from_taxons: A au moins un des taxons
+            item_total: Total produit
+            nth_order: N-ième commande
+            shipping_country: Pays de livraison
+            taxonomy: Taxinomie
+            total_price_of_items_from_taxon: Prix total des Articles du taxon
+            cart_quantity_configuration:
+                count: Nombre
+                equal: Égal
+            contains_product_configuration:
+                exclude: Exclure
+            nth_order_configuration:
+                nth: Nième
+            taxonomy_configuration:
+                exclude: Exclure

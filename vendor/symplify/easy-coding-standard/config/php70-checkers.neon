@@ -1,0 +1,22 @@
+checkers:
+    # PHP-CS-Fixer
+    - PhpCsFixer\Fixer\Alias\PowToExponentiationFixer
+    - PhpCsFixer\Fixer\Operator\TernaryToNullCoalescingFixer
+    PhpCsFixer\Fixer\Alias\RandomApiMigrationFixer:
+        mt_rand: random_int
+        rand: random_int
+
+    # risky
+    - PhpCsFixer\Fixer\Strict\DeclareStrictTypesFixer
+
+    # Typehints
+    - PhpCsFixer\Fixer\FunctionNotation\FunctionTypehintSpaceFixer
+    - PhpCsFixer\Fixer\FunctionNotation\ReturnTypeDeclarationFixer
+    SlevomatCodingStandard\Sniffs\TypeHints\TypeHintDeclarationSniff:
+        usefulAnnotations:
+            - @todo
+            - @dataProvider
+        enableEachParameterAndReturnInspection: true
+
+    # Throwable
+    - SlevomatCodingStandard\Sniffs\Exceptions\ReferenceThrowableOnlySniff

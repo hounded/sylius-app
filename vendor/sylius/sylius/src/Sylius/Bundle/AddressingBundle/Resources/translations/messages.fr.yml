@@ -1,0 +1,24 @@
+# This file is part of the Sylius package.
+# (c) Paweł Jędrzejewski
+
+sylius:
+    form:
+        address:
+            first_name: Prénom
+            last_name: Nom
+            street: Voie
+            zone: Zone
+        country:
+            select: Sélectionner
+        province:
+            abbreviation: Abréviation
+            select: Sélectionner
+        zone:
+            types:
+                zone: Zone
+            scopes:
+                all: Tous
+            select: Sélectionner
+            select_scope: Sélectionnez le champ d'application
+        zone_member:
+            select: Sélectionner

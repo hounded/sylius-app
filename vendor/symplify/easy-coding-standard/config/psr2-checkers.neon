@@ -1,0 +1,3 @@
+includes:
+    - php_codesniffer/psr2.neon
+    - php_cs_fixer/psr2.neon

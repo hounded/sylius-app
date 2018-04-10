@@ -1,0 +1,11 @@
+# This file is part of the Sylius package.
+# (c) Paweł Jędrzejewski
+
+sylius:
+    menu:
+        shop:
+            account:
+                address_book: 'Carnet d’adresses'
+                header: 'Votre compte'
+                order_history: 'Historique des commandes'
+                personal_information: 'Informations personnelles'

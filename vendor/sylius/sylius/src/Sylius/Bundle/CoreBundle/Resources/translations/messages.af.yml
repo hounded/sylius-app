@@ -1,0 +1,25 @@
+# This file is part of the Sylius package.
+# (c) Paweł Jędrzejewski
+
+sylius:
+    form:
+        group:
+            name: Naam
+        image:
+            type: Tipe
+        product_filter:
+            name: Naam
+        shipping_method:
+            zone: Area
+        user:
+            first_name: Naam
+            last_name: Van
+        product_association_type:
+            name: Naam
+    installer:
+        extensions:
+            off: false
+            on: true
+        settings:
+            off: false
+            on: true
